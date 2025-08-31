@@ -6,13 +6,16 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
 
 ## Design e Estilo
 
-- **Tema:** Profissional com Destaques em Azul
+- **Tema:** Profissional com Destaques em Azul e Verde
 - **Paleta de Cores:**
   - Fundo Principal: `bg-white`
   - Texto Principal: `text-black`
-  - Cabeçalho: Fundo `bg-blue-700`, Texto `text-white`
+  - Cabeçalho: Fundo `#01277A`, Texto `text-white`
   - Rodapé: Fundo `bg-blue-700`, Texto `text-white`
   - Botões de Ação: `bg-blue-600` (hover: `bg-blue-700`)
+  - Cores Personalizadas (Hero):
+    - Verde: `rgba(13, 135, 10, 0.7)`
+    - Azul: `rgba(1, 39, 122, 0.7)`
 - **Tipografia:**
   - Fonte: Inter (Google Fonts)
   - Título (h1): `text-4xl`, `font-bold`
@@ -27,6 +30,7 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
 ```
 /
 |-- public/
+|   |-- logo-santacruz.png # Brasão da cidade
 |-- src/
 |   |-- app/
 |   |   |-- globals.css
@@ -42,19 +46,27 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
 |       |-- Header.tsx     # Componente de Cabeçalho
 |       |-- Footer.tsx     # Componente de Rodapé
 |       `-- PhotoGallery.tsx # Componente de Galeria de Fotos
+|-- tailwind.config.ts # Configuração do Tailwind com cores personalizadas
 |-- package.json
 `-- ... (outros arquivos de configuração)
 ```
 
 ## Funcionalidades
 
-- **Cabeçalho:** Exibe o título "Visite Santa Cruz dos Milagres" em um fundo azul (`bg-blue-700`) com texto branco e sombra. Contém links de navegação para as páginas "Início" e "Santuário".
+- **Cabeçalho:** Fundo na cor `#01277A` com texto branco.
+    - **Logo:** Exibe o brasão da cidade (`/logo-santacruz.png`) dentro de um container branco com cantos arredondados (`bg-white p-1 rounded-md`).
+    - **Título:** "Visite Santa Cruz dos Milagres".
+    - **Navegação:** Links para as páginas "Início" e "Santuário".
+    - **Divisor:** Uma linha branca fina (`border-b border-white/20`) separa o cabeçalho do conteúdo da página.
 - **Rodapé:** Exibe o aviso de direitos autorais "© 2024 Visite Santa Cruz dos Milagres. Todos os direitos reservados." em um fundo azul (`bg-blue-700`) com texto branco.
 - **Página Inicial:**
-  - **Seção Hero:** Centralizada vertical e horizontalmente.
-    - Título: "Bem-vindo a Santa Cruz dos Milagres" (`text-4xl`, `font-bold`).
-    - Subtítulo: "A Cidade da Fé e da Peregrinação no Piauí" (`text-xl`).
-  - **Botões de Ação:** Estilizados com fundo azul, texto branco, cantos arredondados, padding e sombra.
+  - **Seção Hero:** Ocupa a tela inteira (`h-screen`) com uma imagem de fundo aplicada via CSS.
+    - **Imagem:** Imagem de fundo (`/santuario-hero-bg.jpeg`) aplicada com `style={{ backgroundImage: "url(...)" }}` e classes `bg-cover bg-center`.
+    - **Overlay:** Um `div` com um gradiente de azul para verde com 70% de opacidade, aplicado com inline `style` para garantir a renderização.
+    - **Conteúdo:** Centralizado vertical e horizontalmente usando `flex`.
+    - **Título:** "Descubra Santa Cruz dos Milagres" (`text-6xl`, `font-extrabold`).
+    - **Subtítulo:** "O Coração da Fé e da Hospitalidade Piauiense" (`text-3xl`, `font-light`).
+  - **Botões de Ação:** Estilizados com efeito "glassmorphism" (`bg-white/20 hover:bg-white/30 backdrop-blur-sm`), texto branco, cantos arredondados (`rounded-full`), padding e sombra.
     - "Horários das Missas" (link para a página `/santuario`)
     - "Como Chegar" (link para a página `/como-chegar`)
     - "Principais Festejos" (link para a página `/festejos`)
