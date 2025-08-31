@@ -26,7 +26,9 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 |   |-- app/
 |   |   |-- globals.css
 |   |   |-- layout.tsx     # Layout principal com Header e Footer
-|   |   `-- page.tsx       # Página inicial
+|   |   |-- page.tsx       # Página inicial
+|   |   `-- santuario/
+|   |       `-- page.tsx   # Página do Santuário
 |   `-- components/
 |       |-- Header.tsx     # Componente de Cabeçalho
 |       `-- Footer.tsx     # Componente de Rodapé
@@ -46,3 +48,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
     - "Horários das Missas"
     - "Como Chegar"
     - "Principais Festejos"
+- **Página Santuário:**
+  - Exibe o título "Santuário de Santa Cruz dos Milagres".
+  - **Seção "Horários de Missas e Celebrações":** Lista os horários das missas.
+  - **Seção "Nossa História":** Apresenta um texto sobre a história do santuário.
