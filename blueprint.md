@@ -31,7 +31,8 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 |   |       `-- page.tsx   # Página do Santuário
 |   `-- components/
 |       |-- Header.tsx     # Componente de Cabeçalho
-|       `-- Footer.tsx     # Componente de Rodapé
+|       |-- Footer.tsx     # Componente de Rodapé
+|       `-- PhotoGallery.tsx # Componente de Galeria de Fotos
 |-- package.json
 `-- ... (outros arquivos de configuração)
 ```
@@ -52,3 +53,6 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
   - Exibe o título "Santuário de Santa Cruz dos Milagres".
   - **Seção "Horários de Missas e Celebrações":** Lista os horários das missas.
   - **Seção "Nossa História":** Apresenta um texto sobre a história do santuário.
+- **Componente PhotoGallery:**
+  - Exibe uma galeria de imagens em um layout de grade (grid).
+  - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
