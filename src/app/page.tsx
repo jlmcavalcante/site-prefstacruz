@@ -28,6 +28,23 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="py-8 px-4">
+        <h2 className="text-3xl font-bold text-center mb-8">A Terra da Santa Cruz, um Refúgio de Fé</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div>
+            <img src="https://picsum.photos/600/400" alt="Vista da cidade de Santa Cruz dos Milagres" className="rounded-lg shadow-md" />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
