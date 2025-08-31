@@ -45,6 +45,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-8 px-4 w-full max-w-4xl">
+        <h2 className="text-3xl font-bold text-center mb-8">Próximo Grande Evento</h2>
+        <div className="bg-slate-100 rounded-lg shadow-md p-8 text-center">
+          <h3 className="text-2xl font-bold mb-2">Festa da Exaltação da Santa Cruz</h3>
+          <p className="text-xl font-semibold mb-4">Setembro de 2025</p>
+          <p className="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+          </p>
+          <Link href="/festejos">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+              Ver Calendário Completo
+            </button>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
