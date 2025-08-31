@@ -10,19 +10,19 @@ export default function Home() {
         <p className="text-xl mb-8">
           A Cidade da Fé e da Peregrinação no Piauí
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link href="/santuario">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
               Horários das Missas
             </button>
           </Link>
           <Link href="/como-chegar">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
               Como Chegar
             </button>
           </Link>
           <Link href="/festejos">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
               Principais Festejos
             </button>
           </Link>
