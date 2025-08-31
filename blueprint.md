@@ -8,10 +8,14 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 
 - **Paleta de Cores:**
   - Azul Principal: `#005b9f` (usado no cabeçalho)
+  - Azul Botões: `bg-blue-600` (hover: `bg-blue-700`)
   - Fundo: `#ffffff`
   - Rodapé: `#f8f9fa`
+  - Texto Subtítulo: `text-slate-600`
 - **Tipografia:**
   - Fonte: Inter (Google Fonts)
+  - Título (h1): `text-4xl`, `font-bold`
+  - Subtítulo (p): `text-xl`
 
 ## Estrutura do Projeto
 
@@ -35,8 +39,10 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 - **Cabeçalho:** Exibe o título "Prefeitura de Santa Cruz dos Milagres" em todas as páginas.
 - **Rodapé:** Exibe o aviso de direitos autorais "© 2024 Prefeitura de Santa Cruz dos Milagres. Todos os direitos reservados." em todas as páginas.
 - **Página Inicial:**
-  - **Seção Hero:** Apresenta o título "Bem-vindo a Santa Cruz dos Milagres" e o subtítulo "A Cidade da Fé e da Peregrinação no Piauí".
-  - **Botões de Ação:**
+  - **Seção Hero:** Centralizada vertical e horizontalmente.
+    - Título: "Bem-vindo a Santa Cruz dos Milagres" (`text-4xl`, `font-bold`).
+    - Subtítulo: "A Cidade da Fé e da Peregrinação no Piauí" (`text-xl`, `text-slate-600`).
+  - **Botões de Ação:** Estilizados com fundo azul, texto branco, cantos arredondados, padding e sombra.
     - "Horários das Missas"
     - "Como Chegar"
     - "Principais Festejos"
