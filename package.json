@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "//": "This is yet another comment to trigger a server restart",
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",

@@ -1,37 +1,44 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <div
-        className="relative min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center"
-        style={{ backgroundImage: 'url(/santuario-hero-bg.jpeg)' }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 px-4">
-          <h1 className="text-5xl font-extrabold tracking-tight mb-4">
-            Descubra Santa Cruz dos Milagres
-          </h1>
-          <p className="text-2xl font-light mb-8">
-            O Coração da Fé e da Hospitalidade Piauiense
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <Link href="/santuario">
-              <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
-                Horários das Missas
-              </button>
-            </Link>
-            <Link href="/como-chegar">
-              <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
-                Como Chegar
-              </button>
-            </Link>
-            <Link href="/festejos">
-              <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
-                Principais Festejos
-              </button>
-            </Link>
+      <div className="bg-gray-900">
+        <div className="relative isolate">
+          <Image
+            src="/santuario-hero-bg.jpeg"
+            alt="Santuário de Santa Cruz dos Milagres"
+            fill
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/70 -z-10" />
+
+          <div className="mx-auto max-w-4xl px-6 py-32 text-center sm:py-48 lg:px-8 lg:py-56">
+            <h1 className="text-5xl font-extrabold tracking-tight text-white">
+              Descubra Santa Cruz dos Milagres
+            </h1>
+            <p className="mt-8 text-2xl font-light text-white">
+              O Coração da Fé e da Hospitalidade Piauiense
+            </p>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <Link href="/santuario">
+                <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
+                  Horários das Missas
+                </button>
+              </Link>
+              <Link href="/como-chegar">
+                <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
+                  Como Chegar
+                </button>
+              </Link>
+              <Link href="/festejos">
+                <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 rounded-md shadow-md transition-colors w-full h-20 flex items-center justify-center text-center text-base">
+                  Principais Festejos
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -49,7 +56,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <img src="https://picsum.photos/600/400?random=2" alt="Vista da cidade de Santa Cruz dos Milagres" className="rounded-lg shadow-md" />
+            <Image src="https://picsum.photos/600/400?random=2" alt="Vista da cidade de Santa Cruz dos Milagres" width={600} height={400} className="rounded-lg shadow-md" />
           </div>
         </div>
       </section>
