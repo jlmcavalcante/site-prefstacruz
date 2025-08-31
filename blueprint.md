@@ -27,8 +27,10 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 |   |   |-- globals.css
 |   |   |-- layout.tsx     # Layout principal com Header e Footer
 |   |   |-- page.tsx       # Página inicial
-|   |   `-- santuario/
-|   |       `-- page.tsx   # Página do Santuário
+|   |   |-- santuario/
+|   |   |   `-- page.tsx   # Página do Santuário
+|   |   `-- como-chegar/
+|   |       `-- page.tsx   # Página Como Chegar
 |   `-- components/
 |       |-- Header.tsx     # Componente de Cabeçalho
 |       |-- Footer.tsx     # Componente de Rodapé
@@ -55,6 +57,9 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
   - **Seção "Horários de Missas e Celebrações":** Lista os horários das missas.
   - **Seção "Nossa História":** Apresenta um texto sobre a história do santuário.
   - **Seção "Galeria de Fotos":** Exibe uma galeria de imagens usando o componente `PhotoGallery`.
+- **Página Como Chegar:**
+  - Layout centralizado com `max-w-4xl` e padding.
+  - Exibe o título "Como Chegar em Santa Cruz dos Milagres".
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
