@@ -50,9 +50,11 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
     - "Como Chegar"
     - "Principais Festejos"
 - **Página Santuário:**
+  - Layout centralizado com `max-w-4xl` e padding.
   - Exibe o título "Santuário de Santa Cruz dos Milagres".
   - **Seção "Horários de Missas e Celebrações":** Lista os horários das missas.
   - **Seção "Nossa História":** Apresenta um texto sobre a história do santuário.
+  - **Seção "Galeria de Fotos":** Exibe uma galeria de imagens usando o componente `PhotoGallery`.
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
