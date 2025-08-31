@@ -15,6 +15,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 - **Tipografia:**
   - Fonte: Inter (Google Fonts)
   - Título (h1): `text-4xl`, `font-bold`
+  - Subtítulo (h2): `text-2xl`, `font-semibold`
   - Subtítulo (p): `text-xl`
 
 ## Estrutura do Projeto
@@ -60,6 +61,8 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 - **Página Como Chegar:**
   - Layout centralizado com `max-w-4xl` e padding.
   - Exibe o título "Como Chegar em Santa Cruz dos Milagres".
+  - Inclui um subtítulo "Localização do Santuário".
+  - Incorpora um mapa interativo do Google Maps com cantos arredondados e sombra.
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
