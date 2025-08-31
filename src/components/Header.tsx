@@ -9,12 +9,12 @@ export default function Header() {
           <Image
             src="/logo-santacruz.png"
             alt="Brasão de Santa Cruz dos Milagagres"
-            width={32}
-            height={32}
+            width={64}
+            height={64}
           />
         </div>
         <Link href="/" className="text-2xl font-bold text-white">
-          Visite Santa Cruz dos Milagres
+          Nome Projeto
         </Link>
         <nav className="ml-auto">
           <ul className="flex space-x-6">
@@ -27,7 +27,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <div className="border-b border-white/20"></div>
+      <div className="border-b border-white h-1"></div>
     </header>
   );
 }

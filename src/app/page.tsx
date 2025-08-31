@@ -13,7 +13,7 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to top left, rgba(13, 135, 10, 0.7), rgba(1, 39, 122, 0.7))',
+            background: 'linear-gradient(to top left, rgba(13, 135, 10, 0.5), rgba(1, 39, 122, 0.9))',
           }}
         />
 
