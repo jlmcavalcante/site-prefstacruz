@@ -7,8 +7,8 @@ import Footer from "../components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Prefeitura de Santa Cruz dos Milagres",
-  description: "Site da Prefeitura de Santa Cruz dos Milagres",
+  title: "Visite Santa Cruz dos Milagres",
+  description: "Conheça Santa Cruz dos Milagres, a cidade da fé e da peregrinação no Piauí.",
 };
 
 export default function RootLayout({
@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-white`}>
         <Header />
-        <main>{children}</main>
+        <main className="bg-white p-8">{children}</main>
         <Footer />
       </body>
     </html>
