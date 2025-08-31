@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="flex-grow flex flex-col items-center justify-center">
@@ -9,9 +11,11 @@ export default function Home() {
           A Cidade da Fé e da Peregrinação no Piauí
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
-            Horários das Missas
-          </button>
+          <Link href="/santuario">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+              Horários das Missas
+            </button>
+          </Link>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
             Como Chegar
           </button>

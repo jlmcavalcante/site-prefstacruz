@@ -46,7 +46,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
     - Título: "Bem-vindo a Santa Cruz dos Milagres" (`text-4xl`, `font-bold`).
     - Subtítulo: "A Cidade da Fé e da Peregrinação no Piauí" (`text-xl`, `text-slate-600`).
   - **Botões de Ação:** Estilizados com fundo azul, texto branco, cantos arredondados, padding e sombra.
-    - "Horários das Missas"
+    - "Horários das Missas" (link para a página `/santuario`)
     - "Como Chegar"
     - "Principais Festejos"
 - **Página Santuário:**
