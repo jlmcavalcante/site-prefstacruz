@@ -15,7 +15,8 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 - **Tipografia:**
   - Fonte: Inter (Google Fonts)
   - Título (h1): `text-4xl`, `font-bold`
-  - Subtítulo (h2): `text-2xl`, `font-semibold`
+  - Subtítulo (h2): `text-3xl`, `font-bold`
+  - Subtítulo (h3): `text-2xl`, `font-semibold`
   - Subtítulo (p): `text-xl`
 
 ## Estrutura do Projeto
@@ -50,7 +51,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
     - Subtítulo: "A Cidade da Fé e da Peregrinação no Piauí" (`text-xl`, `text-slate-600`).
   - **Botões de Ação:** Estilizados com fundo azul, texto branco, cantos arredondados, padding e sombra.
     - "Horários das Missas" (link para a página `/santuario`)
-    - "Como Chegar"
+    - "Como Chegar" (link para a página `/como-chegar`)
     - "Principais Festejos"
 - **Página Santuário:**
   - Layout centralizado com `max-w-4xl` e padding.
@@ -63,6 +64,9 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
   - Exibe o título "Como Chegar em Santa Cruz dos Milagres".
   - Inclui um subtítulo "Localização do Santuário".
   - Incorpora um mapa interativo do Google Maps com cantos arredondados e sombra.
+  - **Seção "Principais Rotas":**
+    - Subtítulo "Vindo de Teresina" com um parágrafo de exemplo.
+    - Subtítulo "Vindo de Floriano" com um parágrafo de exemplo.
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.

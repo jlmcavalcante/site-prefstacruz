@@ -16,9 +16,11 @@ export default function Home() {
               Horários das Missas
             </button>
           </Link>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
-            Como Chegar
-          </button>
+          <Link href="/como-chegar">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+              Como Chegar
+            </button>
+          </Link>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
             Principais Festejos
           </button>
