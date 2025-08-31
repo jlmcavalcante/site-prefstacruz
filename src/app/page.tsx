@@ -12,17 +12,17 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link href="/santuario">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-6 rounded-md shadow-md transition-colors w-full h-12 flex items-center justify-center text-center text-base">
               Horários das Missas
             </button>
           </Link>
           <Link href="/como-chegar">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-6 rounded-md shadow-md transition-colors w-full h-12 flex items-center justify-center text-center text-base">
               Como Chegar
             </button>
           </Link>
           <Link href="/festejos">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors w-full">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-6 rounded-md shadow-md transition-colors w-full h-12 flex items-center justify-center text-center text-base">
               Principais Festejos
             </button>
           </Link>
