@@ -6,14 +6,14 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <div
-        className="relative h-screen bg-cover bg-center"
+        className="relative h-[80vh] bg-cover bg-center"
         style={{ backgroundImage: "url('/santuario-hero-bg.jpeg')" }}
       >
         {/* Tint Overlay */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to top left, rgba(13, 135, 10, 0.5), rgba(1, 39, 122, 0.9))',
+            background: 'linear-gradient(to top left, rgba(13, 135, 10, 0.5), rgba(1, 39, 122, 0.8))',
           }}
         />
 
@@ -26,17 +26,17 @@ export default function Home() {
           </p>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Link href="/santuario">
-              <button className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg">
+              <button className="bg-[#01277A] hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg cursor-pointer">
                 Horários das Missas
               </button>
             </Link>
             <Link href="/como-chegar">
-              <button className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg">
+              <button className="bg-[#01277A] hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg cursor-pointer">
                 Como Chegar
               </button>
             </Link>
             <Link href="/festejos">
-              <button className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg">
+              <button className="bg-[#01277A] hover:bg-blue-800 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 ease-in-out w-full text-lg cursor-pointer">
                 Principais Festejos
               </button>
             </Link>

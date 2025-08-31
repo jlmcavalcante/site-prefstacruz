@@ -94,3 +94,9 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
+
+## Plano de Alterações Atuais
+
+- **Ajuste da Seção Hero:** Reduzir a altura da seção hero de `h-screen` para `h-[80vh]` para que não ocupe a tela inteira.
+- **Correção do Layout do Rodapé:** Implementar um layout "sticky footer" para garantir que o rodapé permaneça na base da página, mesmo em páginas com pouco conteúdo. Isso será feito utilizando flexbox no layout principal.
+- **Alteração dos Botões da Hero:** Mudar a cor de fundo dos botões na seção hero para o mesmo tom de azul usado no cabeçalho (`#01277A`), removendo o efeito de "glassmorphism" para uma aparência mais sólida e coesa.
