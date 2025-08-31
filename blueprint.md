@@ -72,6 +72,10 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 - **Página Festejos:**
   - Layout centralizado com `max-w-4xl` e padding.
   - Exibe o título "Calendário Religioso e Principais Festejos".
+  - **Lista de Eventos:**
+    - Exibe uma lista de eventos em cards com borda, sombra e padding.
+    - Cada card contém o nome do festejo (h3), a data (p) e uma breve descrição (p).
+    - Eventos incluídos: 'Festa da Invenção da Santa Cruz (Maio)', 'Festa da Exaltação da Santa Cruz (Setembro)' e 'Encontro dos Santos (Novembro)'.
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
