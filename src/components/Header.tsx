@@ -1,11 +1,23 @@
-import React from 'react';
+import Link from 'next/link';
 
-const Header = () => {
+export default function Header() {
   return (
-    <header style={{ backgroundColor: '#005b9f', color: 'white', padding: '1rem', textAlign: 'center' }}>
-      <h1>Prefeitura de Santa Cruz dos Milagres</h1>
+    <header className="bg-[#005b9f] text-white shadow-md">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold">
+          Prefeitura de Santa Cruz dos Milagres
+        </Link>
+        <nav>
+          <ul className="flex space-x-6">
+            <li>
+              <Link href="/" className="hover:text-slate-200 transition-colors">Início</Link>
+            </li>
+            <li>
+              <Link href="/santuario" className="hover:text-slate-200 transition-colors">Santuário</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
-};
-
-export default Header;
+}

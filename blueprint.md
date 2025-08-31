@@ -38,7 +38,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 
 ## Funcionalidades
 
-- **Cabeçalho:** Exibe o título "Prefeitura de Santa Cruz dos Milagres" em todas as páginas.
+- **Cabeçalho:** Exibe o título "Prefeitura de Santa Cruz dos Milagres" e links de navegação para as páginas "Início" e "Santuário".
 - **Rodapé:** Exibe o aviso de direitos autorais "© 2024 Prefeitura de Santa Cruz dos Milagres. Todos os direitos reservados." em todas as páginas.
 - **Página Inicial:**
   - **Seção Hero:** Centralizada vertical e horizontalmente.
