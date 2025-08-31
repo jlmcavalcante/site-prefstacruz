@@ -34,4 +34,5 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 
 - **Cabeçalho:** Exibe o título "Prefeitura de Santa Cruz dos Milagres" em todas as páginas.
 - **Rodapé:** Exibe o aviso de direitos autorais "© 2024 Prefeitura de Santa Cruz dos Milagres. Todos os direitos reservados." em todas as páginas.
-- **Página Inicial:** Conteúdo a ser definido.
+- **Página Inicial:**
+  - **Seção Hero:** Apresenta o título "Bem-vindo a Santa Cruz dos Milagres" e o subtítulo "A Cidade da Fé e da Peregrinação no Piauí".
