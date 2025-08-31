@@ -31,8 +31,10 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
 |   |   |-- page.tsx       # Página inicial
 |   |   |-- santuario/
 |   |   |   `-- page.tsx   # Página do Santuário
-|   |   `-- como-chegar/
-|   |       `-- page.tsx   # Página Como Chegar
+|   |   |-- como-chegar/
+|   |   |   `-- page.tsx   # Página Como Chegar
+|   |   `-- festejos/
+|   |       `-- page.tsx   # Página Festejos
 |   `-- components/
 |       |-- Header.tsx     # Componente de Cabeçalho
 |       |-- Footer.tsx     # Componente de Rodapé
@@ -52,7 +54,7 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
   - **Botões de Ação:** Estilizados com fundo azul, texto branco, cantos arredondados, padding e sombra.
     - "Horários das Missas" (link para a página `/santuario`)
     - "Como Chegar" (link para a página `/como-chegar`)
-    - "Principais Festejos"
+    - "Principais Festejos" (link para a página `/festejos`)
 - **Página Santuário:**
   - Layout centralizado com `max-w-4xl` e padding.
   - Exibe o título "Santuário de Santa Cruz dos Milagres".
@@ -67,6 +69,9 @@ Este documento serve como um guia de desenvolvimento para o site da Prefeitura d
   - **Seção "Principais Rotas":**
     - Subtítulo "Vindo de Teresina" com um parágrafo de exemplo.
     - Subtítulo "Vindo de Floriano" com um parágrafo de exemplo.
+- **Página Festejos:**
+  - Layout centralizado com `max-w-4xl` e padding.
+  - Exibe o título "Calendário Religioso e Principais Festejos".
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.

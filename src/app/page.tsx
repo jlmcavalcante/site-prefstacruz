@@ -21,9 +21,11 @@ export default function Home() {
               Como Chegar
             </button>
           </Link>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
-            Principais Festejos
-          </button>
+          <Link href="/festejos">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md shadow-md transition-colors">
+              Principais Festejos
+            </button>
+          </Link>
         </div>
       </section>
     </main>
