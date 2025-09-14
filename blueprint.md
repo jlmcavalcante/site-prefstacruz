@@ -40,8 +40,15 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
 |   |   |   `-- page.tsx   # Página do Santuário
 |   |   |-- como-chegar/
 |   |   |   `-- page.tsx   # Página Como Chegar
-|   |   `-- festejos/
-|   |       `-- page.tsx   # Página Festejos
+|   |   |-- festejos/
+|   |   |   `-- page.tsx   # Página Festejos
+|   |   `-- pontos-turisticos/
+|   |       |-- morro-da-via-sacra/
+|   |       |   `-- page.tsx
+|   |       |-- gruta-de-nossa-senhora-de-lourdes/
+|   |       |   `-- page.tsx
+|   |       `-- mirante-do-cristo-redentor/
+|   |           `-- page.tsx
 |   `-- components/
 |       |-- Header.tsx     # Componente de Cabeçalho
 |       |-- Footer.tsx     # Componente de Rodapé
@@ -91,12 +98,24 @@ Este documento serve como um guia de desenvolvimento para o site "Visite Santa C
     - Exibe uma lista de eventos em cards com borda, sombra e padding.
     - Cada card contém o nome do festejo (h3), a data (p) e uma breve descrição (p).
     - Eventos incluídos: 'Festa da Invenção da Santa Cruz (Maio)', 'Festa da Exaltação da Santa Cruz (Setembro)' e 'Encontro dos Santos (Novembro)'.
+- **Páginas de Pontos Turísticos:**
+  - **Estrutura Comum:**
+    - Título do ponto turístico.
+    - Parágrafo com a história e descrição do local.
+    - Galeria de fotos utilizando o componente `PhotoGallery`.
+    - Mapa do Google Maps incorporado para a localização.
+  - **Páginas Criadas:**
+    - `/pontos-turisticos/morro-da-via-sacra`
+    - `/pontos-turisticos/gruta-de-nossa-senhora-de-lourdes`
+    - `/pontos-turisticos/mirante-do-cristo-redentor`
 - **Componente PhotoGallery:**
   - Exibe uma galeria de imagens em um layout de grade (grid).
   - Aceita uma propriedade `imageUrls` (array de strings) para popular a galeria.
 
 ## Plano de Alterações Atuais
 
+- **Criação das Páginas de Pontos Turísticos:** Foram criadas as páginas individuais para 'Morro da Via Sacra', 'Gruta de Nossa Senhora de Lourdes' e 'Mirante do Cristo Redentor', conforme a estrutura definida.
 - **Ajuste da Seção Hero:** Reduzir a altura da seção hero de `h-screen` para `h-[80vh]` para que não ocupe a tela inteira.
 - **Correção do Layout do Rodapé:** Implementar um layout "sticky footer" para garantir que o rodapé permaneça na base da página, mesmo em páginas com pouco conteúdo. Isso será feito utilizando flexbox no layout principal.
 - **Alteração dos Botões da Hero:** Mudar a cor de fundo dos botões na seção hero para o mesmo tom de azul usado no cabeçalho (`#01277A`), removendo o efeito de "glassmorphism" para uma aparência mais sólida e coesa.
+- **Adicionar Mapa do Google Maps:** Incorporar o mapa do Google Maps nas páginas de pontos turísticos.
